@@ -1,5 +1,5 @@
 {
-  "name": "y",
+  "name": "air_quality_app",
   "version": "1.0.0",
   "description": "App which allows you to check air pollution",
   "main": "index.js",
@@ -13,10 +13,8 @@
   },
   "keywords": [
     "JavaScript",
-    "Air",
-    "Quality",
-    "Air",
-    "Pollution",
+    "Air Quality",
+    "Air Pollution",
     "Enviroment",
     "Health",
     "API"
