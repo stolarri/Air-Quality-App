@@ -1,3 +1,19 @@
-div {
-    color: green;
-  }
+body{
+  font-family: 'Lato', sans-serif;
+}
+
+header{
+  background-color: #ebf5ee;
+}
+
+h1{
+  font-size: 45px;
+  text-align: center;
+  margin: 40px;
+}
+
+.input-group{
+  top: 40px;
+}
+
+
