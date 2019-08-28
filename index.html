@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
   </head>
 
@@ -18,15 +18,23 @@
                   <div class="col-md-7"> 
                         <form class="input-group form-inline">
                           <label for="inputsearch"></label>
-                            <select class="browser-default custom-select">
-                                <option value="country" id="country">Country</option>
-                                <option value="city" id="city">City</option>
-                                <option value="state" id="state">State</option>
+                            <select class="browser-default custom-select" id="country">
+                                <option value="">Country</option>
                             </select>
+                            <select class="browser-default custom-select" id="city">
+                              <option value="">City</option>
+                          </select>
+                          <select class="browser-default custom-select" id="state">
+                            <option value="">State</option>
+                        </select>
                           </label>
-                            <input class="form-control mr-sm-2" id="inputsearch" type="search" placeholder="Search">
                             <button class="btn btn-primary my-2 my-sm-0" type="submit">Add</button>
-                        </form>
+                        </form><br><br>
+                        <form>
+                        <div class="active-cyan-3 active-cyan-4 mb-4">
+                          <input class="form-control" type="text" placeholder="Search">
+                        </div>
+                      </form>
                   </div>
               </div>
             </header>
