@@ -4,7 +4,7 @@ const baseURL = 'https://api.airvisual.com/v2/';
 class AirDataProvider {
     static async getCountries() {
         var array;
-        await fetch(`${baseURL}/countries?key=${API_KEY}`).then(
+        await fetch(`${baseURL}countries?key=${API_KEY}`).then(
             async function (result) {
                 let json = await result.json();
                 array = json.data;
