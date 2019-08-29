@@ -45,13 +45,10 @@ h1{
      color: white;
  }
  
- 
- .float-right>*{
-     display:inline;
- }
-
  .page-footer {
   background-color: #ccf5ab;
  }
 
- 
+ .wrapper{
+  min-height:95.8vh;
+ }
