@@ -1,47 +1,56 @@
-body{
+body {
   font-family: 'Lato', sans-serif;
+
 }
 
-header{
-  background-color:rgba(177, 240, 126, 0.65);
+header {
+  background-color: rgba(177, 240, 126, 0.65);
 }
 
-h1{
+h1 {
   font-size: 45px;
   text-align: center;
   margin: 40px 0px 40px 20px;
 }
 
-.input-group{
+.input-group {
   top: 40px;
   left: 20px;
 }
 
-.search{
+.search {
   margin-left: 20px;
   margin-right: 20px;
 }
 
 
-:root{
-  --bgcolor:rgba(101, 173, 41, 0.65);
-  
- }
- 
- 
- img{
-     width: 70px;
- }
- 
- .card{
-     padding:20px;
-     min-height: 150px;
-     background-color: var(--bgcolor);
-     font-size: 1.3rem;
-     color: white;
- }
- 
- 
- .float-right>*{
-     display:inline;
- }
+:root {
+  --bgcolor: rgba(101, 173, 41, 0.65);
+
+}
+
+
+img {
+  width: 70px;
+}
+
+.card {
+  padding: 20px;
+  min-height: 150px;
+  background-color: var(--bgcolor);
+  font-size: 1.3rem;
+  color: white;
+}
+
+.page-footer {
+  background-color: #ccf5ab;
+}
+
+.wrapper {
+  padding-bottom: 5vh;
+  min-height: 93vh;
+}
+
+footer {
+  min-height: 7vh;
+}
