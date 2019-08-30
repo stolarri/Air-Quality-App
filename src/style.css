@@ -1,34 +1,31 @@
-body {
-  font-family: 'Lato', sans-serif;
-
-}
-
-header {
-  background-color: rgba(177, 240, 126, 0.65);
-}
-
-h1 {
-  font-size: 45px;
-  text-align: center;
-  margin: 40px 0px 40px 20px;
-}
-
-.input-group {
-  top: 40px;
-  left: 20px;
-}
-
-.search {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-
 :root {
   --bgcolor: rgba(101, 173, 41, 0.65);
 
 }
 
+body {
+  font-family: 'Lato', sans-serif;
+  color: white;
+  background-image: url(img/bgc.jpg);
+}
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
+  margin-top: 40px;
+}
+
+select {
+  margin-right: 1vw;
+}
+form{
+  max-width: 70vw;
+  margin: 0 auto;
+}
+.input-group {
+  top: 40px;
+
+}
 
 img {
   width: 70px;
@@ -39,18 +36,34 @@ img {
   min-height: 150px;
   background-color: var(--bgcolor);
   font-size: 1.3rem;
-  color: white;
+
 }
 
 .page-footer {
-  background-color: #ccf5ab;
+  background-color: #3369cc;
 }
 
 .wrapper {
   padding-bottom: 5vh;
   min-height: 93vh;
+  margin: 0 auto;
+  
 }
 
 footer {
   min-height: 7vh;
+
+}
+
+@media(max-width:480px) {
+  h1 {
+    font-size: 4rem;
+  }
+  
+}
+@media(max-width:590px) {
+  
+  form{
+    max-width:100%;
+  }
 }
