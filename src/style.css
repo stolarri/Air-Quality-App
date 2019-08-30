@@ -40,8 +40,11 @@ h1{
      font-size: 1.3rem;
      color: white;
  }
- 
- 
+
  .float-right>*{
-     display:inline;
- }
+  display:inline;
+}
+
+.page-footer {
+background-color: #ccf5ab;
+}
