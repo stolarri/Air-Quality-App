@@ -3,6 +3,7 @@ const TerserJSPlugin = require('terser-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+
 module.exports = {
   optimization: {
         minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})],
@@ -12,7 +13,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'main.js'
   },
-  target: 'node', 
+  target: 'node',
   module: {
     rules: [
       {
@@ -21,6 +22,15 @@ module.exports = {
         use: {
           loader: "babel-loader"
         }
+      },
+      {
+        test: /\.(ttf|eot|svg|png|jpg|gif|ico)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader: 'file-loader'
+      },
+      {
+        test: /\.html$/,
+        exclude: /node_modules/,
+        loader: 'html-loader'
       },
       {
         test: /\.css$/,
