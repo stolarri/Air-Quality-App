@@ -3,16 +3,23 @@ const TerserJSPlugin = require('terser-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const webpack = require('webpack');
 module.exports = {
-  optimization: {
-        minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})],
-      },  
-  entry: { main: './src/index.js' },
+  //optimization: {
+  //      minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})],
+  //    },  
+  entry: { 
+  main: [
+  'babel-polyfill',
+  './src/AirDataProvider.js',
+  './src/index.js'
+  ]
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'main.js'
   },
-  target: 'node', 
+  
   module: {
     rules: [
       {
@@ -37,6 +44,9 @@ module.exports = {
         hash: true,
         template: './src/index.html',
         filename: 'index.html'
-      })
+      }),
+	new webpack.ProvidePlugin({
+      _: 'lodash'
+    })
   ]
 };
