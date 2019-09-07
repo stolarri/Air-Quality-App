@@ -2,10 +2,10 @@
   "name": "air_quality_app",
   "version": "1.0.0",
   "description": "App which allows you to check air pollution",
-  "private": true,
+  "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
-    "dev": "webpack --mode development"
+    "dev": "webpack --watch"
   },
   "repository": {
     "type": "git",
@@ -27,14 +27,9 @@
   "homepage": "https://github.com/stolarri/Air-Quality-App#readme",
   "devDependencies": {
     "@babel/core": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "@babel/preset-es2015": "^7.0.0-beta.53",
-    "babel-core": "^6.26.3",
+    "@babel/polyfill": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
     "babel-loader": "^8.0.6",
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-stage-0": "^6.24.1",
     "css-loader": "^3.2.0",
     "file-loader": "^4.2.0",
     "html-loader": "^0.5.5",
@@ -42,11 +37,10 @@
     "mini-css-extract-plugin": "^0.8.0",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "style-loader": "^1.0.0",
-    "webpack": "^4.39.3",
-    "webpack-cli": "^3.3.8"
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.7"
   },
   "dependencies": {
-    "lodash": "^4.17.15",
-    "node-fetch": "^2.6.0"
+    "babel-polyfill": "^6.26.0"
   }
 }
