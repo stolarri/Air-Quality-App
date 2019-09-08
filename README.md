@@ -12,6 +12,8 @@ It was created as first team project for the CodersCamp course. We've used Air V
 
 ### Live preview
 
+[Have a look!](https://stolarri.github.io/Air-Quality-App/)
+
 ### Technologies
 
 * HTML
