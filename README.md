@@ -5,7 +5,7 @@
 
 ### Project description
 
-The app shows and comapares air poliution in cities around the world. See for yourself - Explore the air quality
+The app shows and comapares air polution in cities around the world. See for yourself - Explore the air quality
 anywhere in the world!
 
 It was created as first team project for the CodersCamp course. We've used Air Visual API in this project.
